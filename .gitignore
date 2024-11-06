@@ -1,0 +1,48 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.sqlite3
+*.db
+db.sqlite3
+# If using PostgreSQL or another DB, add your custom db configuration here (but not actual credentials)
+
+# Django migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Local settings
+local_settings.py
+
+# Media and static files
+media/
+static/
+
+# IDE/editor directories
+.idea/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.gz
+*.tar
+*.whl
+*.pyd
