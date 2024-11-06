@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>My Template</title>
+</head>
+<body>
+    <h1>Welcome to My Template!</h1>
+    <p>This is a simple template example.</p>
+    <ul>
+        
+        {% for task in tasks %}
+        <li>
+            <p>{{task.title}}</p>
+            <span> {{task.description}} - {{task.date}} </span>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
